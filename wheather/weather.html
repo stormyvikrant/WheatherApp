@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="weather.css">
+<body>
+    <h1>Current Weather Data</h1>
+  <center><input placeholder="Enter Your City" type="text" id="cityinput">
+    <button onclick="getWeatherData()" style="width: 80px;height: 35px;font-size: 20px;border-radius: 10px;background-color: aqua;">Search</button>
+  </center>  
+ 
+    
+   
+    <div id="bigbox">
+    <div id="container"></div>
+    <div class="googlemap">
+            <iframe width="600" height="400" id="googlemap"  
+                frameborder="0" scrolling="no" 
+                marginheight="0" marginwidth="0">
+            </iframe>
+    </div>
+    </div>
+    
+    <div id="days"></div>
+   
+    
+</body>
+</html>
+<script src="weather.js"></script>
